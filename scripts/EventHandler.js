@@ -1,6 +1,9 @@
 var welcomeLabel = document.getElementById("welcome");
 var displayEvent = document.getElementById("displayEvent");
 
+var userDisplay = document.getElementById("userDisplay");
+var passDisplay = document.getElementById("passDisplay");
+
 welcomeLabel.addEventListener("dblclick", function () {
     console.log("Event: dblclick");
     displayEvent.textContent = "Event: dblclick";
@@ -21,7 +24,7 @@ function validateForm() {
         alert("Name must be filled out");
         return false;
     } else {
-        console.log('Username: ${ x }) \n Password: ${ y }')
+        console.log(`Username: ${ x } \n Password: ${ y }`)
         userDisplay.textContent = x;
         passDisplay.textContent = y;
         return false;
