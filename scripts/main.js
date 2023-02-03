@@ -47,6 +47,9 @@
         //         <p class="mt-5 lead">and... what do you this of this method?</p>
         //     </div>
         // `
+
+        let Neema = new Contact("Neema Mwansembo", "100845311", "ney@gmail.com")
+        console.log(Neema.toString())
     }
 
     function Start() {
